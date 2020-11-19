@@ -13,7 +13,7 @@ class Reverse_Words {
             // reverse order of the words
             reversedWords += words[i] + " ";
         }
-        // return the words
+        // return the words reducing trailing space
         return reversedWords.strip();
 
     }
