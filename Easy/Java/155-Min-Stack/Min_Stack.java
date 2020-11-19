@@ -3,26 +3,43 @@
 // Solution:
 public class Min_Stack {
 
-        /** initialize your data structure here. */
-        public Min_Stack() {
-            // create generic arraylist object
-            // set capacity to 10
+    /** initialize your data structure here. */
+    public Min_Stack() {
+        // create generic arraylist object
+        // set capacity to 10
+        int capacity = 10;
 
+    }
+
+    public void push(int x) {
+        // if not exceeding size:
+        if (Min_Stack.length() < Min_Stack.capacity) {
+
+        } else {
+            // increase capacity of stack
+            Min_Stack.capacity += 10;
+            // re-attempt pushing
+            Min_Stack.push(this.x);
         }
+    }
 
-        public void push(int x) {
+    public void pop() {
+        // removes last element of the array
+        this.Min_Stack.pop();
+    }
 
+    public int top() {
+        // check for size in try catch:
+
+        if (this.Min_Stack.length() != 0) {
+            // return the last element
+            return this.Min_Stack[this.Min_Stack.length()];
         }
+    }
 
-        public void pop() {
-            this.Min_Stack.pop();
-        }
-
-        public int top() {
-            
-        }
-
-        public int getMin() {
+    public int getMin() {
+        if (this.Min_Stack.length() != 0) {
+            // return the smallest element
 
         }
     }
