@@ -1,10 +1,13 @@
+// Problem: https://leetcode.com/problems/min-stack/
+
+// Solution:
 public class Min_Stack {
 
         /** initialize your data structure here. */
         public Min_Stack() {
             // create generic arraylist object
             // set capacity to 10
-            
+
         }
 
         public void push(int x) {
