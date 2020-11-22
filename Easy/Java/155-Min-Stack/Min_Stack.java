@@ -1,47 +1,44 @@
 // Problem: https://leetcode.com/problems/min-stack/
 
+
 // Solution:
 public class Min_Stack {
 
+    // set capacity to 10
+    public int capacity = 10;
+    public int[] stack_contents = new int[capacity];
+
     /** initialize your data structure here. */
     public Min_Stack() {
-        // create generic arraylist object
-        // set capacity to 10
-        int capacity = 10;
+        int[] stack_contents = new int[capacity];
 
+        this.stack_contents = stack_contents;
     }
 
     public void push(int x) {
         // if not exceeding size:
-        if (Min_Stack.length() < Min_Stack.capacity) {
-
+        if (this.stack_contents.length < this.capacity) {
+            this.stack_contents[this.stack_contents.length - 1 ] = x;
         } else {
             // increase capacity of stack
-            Min_Stack.capacity += 10;
+            this.capacity += 10;
             // re-attempt pushing
-            Min_Stack.push(this.x);
+            this.stack_contents[this.stack_contents.length - 1 ] = x;
         }
     }
 
     public void pop() {
         // removes last element of the array
-        this.Min_Stack.pop();
+        // this.stack_contents.pop(sta);
     }
 
     public int top() {
         // check for size in try catch:
-
-        if (this.Min_Stack.length() != 0) {
-            // return the last element
-            return this.Min_Stack[this.Min_Stack.length()];
-        }
+        return 0;
     }
 
     public int getMin() {
-        if (this.Min_Stack.length() != 0) {
-            // return the smallest element
-
-        }
+        return 0;
     }
 
     /**
@@ -49,4 +46,12 @@ public class Min_Stack {
      * new MinStack(); obj.push(x); obj.pop(); int param_3 = obj.top(); int param_4
      * = obj.getMin();
      */
+
+    public static void main(String[] args) {
+        System.out.println("Creating a Stack...");
+        Min_Stack example_stack = new Min_Stack();
+        System.out.println("Pushing 23 to stack");
+        example_stack.push(23);
+        
+    }
 }
