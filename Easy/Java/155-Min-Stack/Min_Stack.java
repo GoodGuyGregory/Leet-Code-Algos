@@ -113,48 +113,56 @@ public class Min_Stack {
         // }
 
         // EXAMPLE CALLS
-        System.out.println("Examples from Leet-Code:");
-        System.out.println("=========================");
+        // System.out.println("Examples from Leet-Code:");
+        // System.out.println("=========================");
 
-        // adds -2
-        example_stack.push(-2);
-        // adds 0
-        example_stack.push(0);
-        // adds -3
-        example_stack.push(-3);
-        // returns -3
-        System.out.println(example_stack.getMin());
-        // removes -3
-        example_stack.pop();
-        // removes 0
-        System.out.println(example_stack.top());
-        // returns -2
-        System.out.println(example_stack.getMin());
+        // // adds -2
+        // example_stack.push(-2);
+        // // adds 0
+        // example_stack.push(0);
+        // // adds -3
+        // example_stack.push(-3);
+        // // returns -3
+        // System.out.println(example_stack.getMin());
+        // // removes -3
+        // example_stack.pop();
+        // // removes 0
+        // System.out.println(example_stack.top());
+        // // returns -2
+        // System.out.println(example_stack.getMin());
 
-        System.out.println("Submission Test:");
-        System.out.println("=====================");
-        Min_Stack submissionStack = new Min_Stack();
-        submissionStack.push(2);
-        submissionStack.push(0);
-        submissionStack.push(3);
-        submissionStack.push(0);
-        System.out.println(submissionStack.getMin());
-        submissionStack.pop();
-        System.out.println(submissionStack.getMin());
-        submissionStack.pop();
-        System.out.println(submissionStack.getMin());
-        submissionStack.pop();
-        System.out.println(submissionStack.getMin());
+        // System.out.println("Submission Test:");
+        // System.out.println("=====================");
+        // Min_Stack submissionStack = new Min_Stack();
+        // submissionStack.push(2);
+        // submissionStack.push(0);
+        // submissionStack.push(3);
+        // submissionStack.push(0);
+        // System.out.println(submissionStack.getMin());
+        // submissionStack.pop();
+        // System.out.println(submissionStack.getMin());
+        // submissionStack.pop();
+        // System.out.println(submissionStack.getMin());
+        // submissionStack.pop();
+        // System.out.println(submissionStack.getMin());
 
-        System.out.println("Third Submission:");
-        System.out.println("=====================");
-        Min_Stack thirdSubmissionExample = new Min_Stack();
-        thirdSubmissionExample.push(1);
-        thirdSubmissionExample.push(2);
-        System.out.println(thirdSubmissionExample.top());
-        System.out.println(thirdSubmissionExample.getMin());
-        thirdSubmissionExample.pop();
-        System.out.println(thirdSubmissionExample.getMin());
-        System.out.println(thirdSubmissionExample.top());
+        // System.out.println("Third Submission:");
+        // System.out.println("=====================");
+        // Min_Stack thirdSubmissionExample = new Min_Stack();
+        // thirdSubmissionExample.push(1);
+        // thirdSubmissionExample.push(2);
+        // System.out.println(thirdSubmissionExample.top());
+        // System.out.println(thirdSubmissionExample.getMin());
+        // thirdSubmissionExample.pop();
+        // System.out.println(thirdSubmissionExample.getMin());
+        // System.out.println(thirdSubmissionExample.top());
+
+        System.out.println("Leet Code Stack Trace Example");
+        System.out.println("================================");
+        Min_Stack leetExample = new Min_Stack();
+        leetExample.push(85);
+        leetExample.push(-99);
+        leetExample.push(67);
+        System.out.println("GetMin: " + leetExample.getMin());
     }
 }
